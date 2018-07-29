@@ -30,7 +30,7 @@ export class AutocompleteComponent implements OnInit {
   selectUser(user) {
     this.userSelected.emit(user);
     this.userResults = [];
-    this.searchText.setValue('', { emitEvent: false });
+    this.searchText.setValue('');
   }
 
 
