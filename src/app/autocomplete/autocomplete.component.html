@@ -1,0 +1,12 @@
+<input class="search-box" type="text" [formControl]="searchText" autofocus placeholder="Search an user" (focus)="showResults()"
+  (focusout)="hideResults()">
+<ul class="search-results">
+  <li *ngFor="let user of userResults" class="search-item" (click)="selectUser(user)">
+    <div>
+      {{ user.first_name }}, {{ user.last_name }} ({{ user.username }})
+    </div>
+    <small class="location">
+      {{ user.city }}, {{ user.country }}
+    </small>
+  </li>
+</ul>

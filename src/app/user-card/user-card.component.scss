@@ -1,0 +1,14 @@
+.user-card {
+  padding: 5px;
+  display:flex;
+  border: 1px solid lightgray;
+  align-items: center;
+  justify-content: space-between;
+  .fav-color {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+}

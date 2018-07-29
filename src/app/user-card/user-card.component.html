@@ -1,0 +1,15 @@
+<div class="user-card">
+  <div class="user-info">
+    <h2>{{ user.last_name }}, {{ user.first_name}}</h2>
+    <div>{{ user.username }}</div>
+    <div>{{ user.email }}</div>
+    <div>{{ user.city }}, {{ user.country }}</div>
+    <a [href]="user.blog" target="_blank">Visit blog</a>
+  </div>
+  <div class="fav-color" [style.background]="user.fav_color" *ngIf="user.fav_color">
+    <div>
+      <div>Favorite color:</div>
+      <div> {{ user.fav_color }} </div>
+    </div>
+  </div>
+</div>
