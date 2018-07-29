@@ -1,5 +1,4 @@
-<input class="search-box" type="text" [formControl]="searchText" autofocus placeholder="Search an user" (focus)="showResults()"
-  (focusout)="hideResults()">
+<input class="search-box" type="text" [formControl]="searchText" autofocus placeholder="Search an user">
 <ul class="search-results">
   <li *ngFor="let user of userResults" class="search-item" (click)="selectUser(user)">
     <div>

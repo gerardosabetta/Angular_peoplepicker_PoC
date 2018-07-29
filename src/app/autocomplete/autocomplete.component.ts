@@ -26,12 +26,6 @@ export class AutocompleteComponent implements OnInit {
       this.userResults = result;
     });
   }
-  showResults() {
-    this.displayResults = true;
-  }
-  hideResults() {
-    this.displayResults = false;
-  }
 
   selectUser(user) {
     this.userSelected.emit(user);
