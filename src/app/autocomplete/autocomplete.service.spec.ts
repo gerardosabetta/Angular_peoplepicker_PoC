@@ -32,10 +32,10 @@ describe('AutocompleteService', () => {
     });
 
     const req = httpMock
-      .expectOne(`${service.URL}/users?searchText=smith`)
+      .expectOne(`${service.URL}/users?searchText=smith`);
 
     expect(req.request.method).toBe('GET');
     req.flush(mockedResponse);
 
-  })
+  });
 });
