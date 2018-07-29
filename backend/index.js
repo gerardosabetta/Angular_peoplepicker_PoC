@@ -13,7 +13,7 @@ app.get('/users', (req, res) => {
   if (req.query.searchText) {
     res.send(users.filter(user => user.username.includes(req.query.searchText)))
   } else {
-    res.send(users)
+    res.send([])
   }
 })
 
