@@ -6,10 +6,10 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AutocompleteService {
-
+  readonly URL = 'http://localhost:3001'
   constructor(private http: HttpClient) { }
 
-  public searchUser(user): Observable<User[]> {
-    return this.http.get<User[]>(`http://127.0.0.1:3001/users?searchText=${user}`);
+  public searchUser(user: string): Observable<User[]> {
+    return this.http.get<User[]>(`${this.URL}/users?searchText=${user}`);
   }
 }
